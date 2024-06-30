@@ -10,6 +10,7 @@ export const metadata = {
   },
   description: "Hostel Management application manages the hostel.",
 };
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

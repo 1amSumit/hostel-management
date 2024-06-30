@@ -2,11 +2,12 @@
 
 import { useSearchParams } from "next/navigation";
 
-export default function PasswordInput({ type, placeholder }) {
+export default function PasswordInput({ type, placeholder, name }) {
   const searchParams = useSearchParams();
   const activeMode = searchParams.get("user") ?? "Admin";
   return (
     <input
+      name={name}
       type={
         activeMode === "Admin"
           ? type

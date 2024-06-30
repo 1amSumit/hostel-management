@@ -23,11 +23,15 @@ export default function page() {
         </div>
         <div className="px-3 py-2 items-center gap-1 rounded-md flex flex-row bg-gray-100">
           <CiUser className="text-xl text-gray-800" />
-          <Input type={"text"} placeholder={"Email"} />
+          <Input name={"email"} type={"text"} placeholder={"Email"} />
         </div>
         <div className="px-3 py-2 items-center gap-1 rounded-md flex flex-row bg-gray-100">
           <CiLock className="text-xl text-gray-800" />
-          <PasswordInput type={"password"} placeholder={"Password"} />
+          <PasswordInput
+            name={"password"}
+            type={"password"}
+            placeholder={"Password"}
+          />
         </div>
 
         <div className="mt-2">
